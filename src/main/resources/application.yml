@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:49153/test
+    username: postgres
+    password: postgrespw
+
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
